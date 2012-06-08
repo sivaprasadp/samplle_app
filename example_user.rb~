@@ -1,0 +1,18 @@
+class User
+attr_accsr = [:name, :email]
+
+def initialize (attribute = {})
+@name = attribute[:name]
+@email = attribute[:email]
+end
+
+def email
+"#{@name} <#{@email}>"
+end
+
+
+end
+
+
+r = User.new(name: "Siva", email: "kjad")
+r.email
